@@ -8,5 +8,7 @@
             "email": "32770045+john-arcus@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {
+        "johnniewalker/xandria": "^0.0.4"
+    }
 }
