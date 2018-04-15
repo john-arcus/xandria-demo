@@ -1,0 +1,12 @@
+{
+    "name": "johnniewalker/xandria-demo",
+    "type": "project",
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "John (Arcus)",
+            "email": "32770045+john-arcus@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
