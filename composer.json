@@ -10,5 +10,8 @@
     ],
     "require": {
         "johnniewalker/xandria": "^0.0.4"
+    },
+    "require-dev": {
+        "behat/behat": "^3.4"
     }
 }
