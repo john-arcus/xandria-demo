@@ -7,4 +7,11 @@ require __DIR__ . '/../vendor/autoload.php';
 $concreteORMapper = new Xandria\ConcreteDemos\DAccess\ConcreteORMapper();
 
 //Fart out some output.
-print_r($concreteORMapper->getMessages());
+if( is_array( $concreteORMapper->getMessages() ) ) {
+    echo "Seems OK"  . PHP_EOL;
+} else {
+    //throw error
+    echo "Something broke" . PHP_EOL;
+    exit(1);
+}
+exit(0);
