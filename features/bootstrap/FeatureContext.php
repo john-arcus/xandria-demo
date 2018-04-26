@@ -14,6 +14,10 @@ class FeatureContext implements Context
 {
     //By convention, any succesful cli command should return 0 upon success.
     const STANDARD_SUCCESFUL_EXITCODE = 0;
+
+    //Assertion library
+    protected $assert;
+
     /**
      * Initializes context.
      *
@@ -23,7 +27,10 @@ class FeatureContext implements Context
      */
     public function __construct()
     {
-    $this->assert =  new ConcreteAssert();
+    //Get the assertion library up and running.
+    //Currently this is simply a concrete version of `PHPUnit\Framework\Assert`.
+    //See PHPUnit docs for usages.
+    $this->assert = new ConcreteAssert();
     }
 
     /**
