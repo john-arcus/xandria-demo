@@ -10,7 +10,7 @@ A repo to demonstrate the [Xandria library](https://github.com/johnniewalker/xan
 Then, assuming that you have installed [Composer](https://getcomposer.org/), run:
 
 ~~~~
-#composer update
+$ composer update
 ~~~~
 
 
@@ -19,7 +19,7 @@ Then, assuming that you have installed [Composer](https://getcomposer.org/), run
 Navigate your command line to the root of this project and run:
 
 ~~~~
-# php ./src/bootstrap.php
+$ php ./src/bootstrap.php
 ~~~~
 
 At this point you should see the 'contents' of an empty array being `print_r`'d to the screen.
