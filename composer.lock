@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c405e547ea1f27687815b782bfebcd90",
+    "content-hash": "8b4c9af44ee85feca3d22083c6a7cc3c",
     "packages": [
         {
             "name": "johnniewalker/xandria",
@@ -53,6 +53,37 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "arcus-software/concrete-php-assert",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/john-arcus/concrete-php-assert.git",
+                "reference": "47bd219b698e42378f10e280c2b440ea4f8c12b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/john-arcus/concrete-php-assert/zipball/47bd219b698e42378f10e280c2b440ea4f8c12b4",
+                "reference": "47bd219b698e42378f10e280c2b440ea4f8c12b4",
+                "shasum": ""
+            },
+            "require-dev": {
+                "behat/behat": "^3.4",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ConcretePhpAssert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "A concrete class that extends PHPUnit'Assert class.",
+            "time": "2018-04-26T21:01:29+00:00"
+        },
         {
             "name": "behat/behat",
             "version": "v3.4.3",

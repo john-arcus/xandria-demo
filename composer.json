@@ -13,6 +13,7 @@
     },
     "require-dev": {
         "behat/behat": "^3.4",
-        "phpunit/phpunit": "^7.1"
+        "phpunit/phpunit": "^7.1",
+        "arcus-software/concrete-php-assert": "^0.0.3"
     }
 }

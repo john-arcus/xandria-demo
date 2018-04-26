@@ -5,7 +5,7 @@ use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 
-use  PHPUnit\Framework\Assert;
+use ConcretePhpAssert\ConcreteAssert;
 
 /**
  * Defines application features from the specific context.
@@ -23,7 +23,7 @@ class FeatureContext implements Context
      */
     public function __construct()
     {
-
+    $this->assert =  new ConcreteAssert();
     }
 
     /**
@@ -69,7 +69,7 @@ class FeatureContext implements Context
 
         //check for some virtualization product
         //See: https://www.vagrantup.com/docs/providers/
-        PHPUnit\Framework\Assert::assertTrue( $this->isCliCommandSuccessful("VBoxManage --version") );
+        $this->assert->assertTrue( $this->isCliCommandSuccessful("VBoxManage --version") );
 
     }
 
@@ -105,6 +105,6 @@ class FeatureContext implements Context
         //var_dump($this->latestConsoleOutputArray);
 
 
-        PHPUnit\Framework\Assert::assertEquals("Seems OK", $this->latestConsoleOutputArray[0]);
+        $this->assert->assertEquals("Seems OK", $this->latestConsoleOutputArray[0]);
     }
 }
