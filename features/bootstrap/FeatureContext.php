@@ -22,89 +22,49 @@ class FeatureContext implements Context
     }
 
     /**
-     * @Given I have cloned the project locally
+     * @Given I have installed the project
      */
-    public function iHaveClonedTheProjectLocally()
+    public function iHaveInstalledTheProject()
     {
         throw new PendingException();
     }
 
     /**
-     * @Given I have :arg1 and a :arg2 installed on my host machine
+     * @Given I have Vagrant and a virtualization product installed on my host machine
      */
-    public function iHaveAndAInstalledOnMyHostMachine($arg1, $arg2)
+    public function iHaveVagrantAndAVirtualizationProductInstalledOnMyHostMachine()
     {
         throw new PendingException();
     }
 
     /**
-     * @When I navigate to the :arg1 in my terminal
+     * @When I run `vagrant up` in the root of the project
      */
-    public function iNavigateToTheInMyTerminal($arg1)
+    public function iRunVagrantUpInTheRootOfTheProject()
     {
         throw new PendingException();
     }
 
     /**
-     * @When run `vagrant up`
+     * @Then vagrant provisions and launches a Homestead Improved virtual environment
      */
-    public function runVagrantUp()
+    public function vagrantProvisionsAndLaunchesAHomesteadImprovedVirtualEnvironment()
     {
         throw new PendingException();
     }
 
     /**
-     * @Then vagrant provisions :arg1
+     * @When I run the command to run the project's quickstart.php script
      */
-    public function vagrantProvisions($arg1)
+    public function iRunTheCommandToRunTheProjectsQuickstartPhpScript()
     {
         throw new PendingException();
     }
 
     /**
-     * @Then launches it
+     * @Then The expected output is written to STDOUT to prove that the project code is working OK.
      */
-    public function launchesIt()
-    {
-        throw new PendingException();
-    }
-
-    /**
-     * @Given I have navigated to :arg1 in my terminal
-     */
-    public function iHaveNavigatedToInMyTerminal($arg1)
-    {
-        throw new PendingException();
-    }
-
-    /**
-     * @Given I have the project's :arg1 running.
-     */
-    public function iHaveTheProjectsRunning($arg1)
-    {
-        throw new PendingException();
-    }
-
-    /**
-     * @Given I have run vagrant ssh
-     */
-    public function iHaveRunVagrantSsh()
-    {
-        throw new PendingException();
-    }
-
-    /**
-     * @When I run the command to run the project's :arg1 script
-     */
-    public function iRunTheCommandToRunTheProjectsScript($arg1)
-    {
-        throw new PendingException();
-    }
-
-    /**
-     * @Then The :arg1 is written to STDOUT to prove that the project code is working OK.
-     */
-    public function theIsWrittenToStdoutToProveThatTheProjectCodeIsWorkingOk($arg1)
+    public function theExpectedOutputIsWrittenToStdoutToProveThatTheProjectCodeIsWorkingOk()
     {
         throw new PendingException();
     }

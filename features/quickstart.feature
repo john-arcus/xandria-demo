@@ -8,19 +8,15 @@ Feature: Quick Start to see demo in action.
 
 
   Scenario: Launching the environment.
-    Given I have cloned the project locally
-    And I have "Vagrant" and a "virtualization product" installed on my host machine
-    When I navigate to the "project's root directory" in my terminal
-    And run `vagrant up`
-    Then vagrant provisions "Homestead Improved virtual environment"
-    And launches it
+    Given I have installed the project
+    And I have Vagrant and a virtualization product installed on my host machine
+    When I run `vagrant up` in the root of the project
+    Then vagrant provisions and launches a Homestead Improved virtual environment
 
   Scenario: Run the demo code to prove it works.
-    Given I have navigated to "the project's root directory" in my terminal
-    And I have the project's "Homestead Improved virtual environment" running.
-    And I have run vagrant ssh
-    When I run the command to run the project's "quickstart.php" script
-    Then The "expected output" is written to STDOUT to prove that the project code is working OK.
+    Given I have installed the project
+    When I run the command to run the project's quickstart.php script
+    Then The expected output is written to STDOUT to prove that the project code is working OK.
 
 
 
