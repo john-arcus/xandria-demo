@@ -6,10 +6,6 @@ Feature: Quick Start to see demo in action.
   It is a common courtesy to make it easy for newcomers. Any project that exposes the ethos that they value contributors
   and make the effort to welcome them will get more supporters.
 
-  Scenario: Cloning the Xandria-Demo project.
-    Given I have access to the "project's github repo"
-    When I visit "the README file"
-    Then I can see "instructions on how to clone the repository".
 
   Scenario: Launching the environment.
     Given I have cloned the project locally

@@ -19,31 +19,6 @@ class FeatureContext implements Context
      */
     public function __construct()
     {
-
-    }
-
-    /**
-     * @Given I have access to the :arg1
-     */
-    public function iHaveAccessToThe($arg1)
-    {
-        throw new PendingException();
-    }
-
-    /**
-     * @When I visit :arg1
-     */
-    public function iVisit($arg1)
-    {
-        throw new PendingException();
-    }
-
-    /**
-     * @Then I can see :arg1.
-     */
-    public function iCanSee($arg1)
-    {
-        throw new PendingException();
     }
 
     /**
